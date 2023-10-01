@@ -1,17 +1,30 @@
 package org.example;
 
-import java.net.ConnectException;
-import java.sql.Connection;
-
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import DAOs.IPessoaDAO;
+import DAOs.PessoaDAO;
+import Modules.Pessoa;
 
 public class Main {
     public static void main(String[] args) {
-        //ConexaoFactory.getConnection();
+        Pessoa ps = new Pessoa("Anani", "65996451154", "58141286153");
 
-        //ConexaoFactory conn = new ConexaoFactory();
-        //Connection conexao = conn.getConnection();
+        IPessoaDAO p = new PessoaDAO();
 
+        //p.insert(ps);
+
+        //var x = p.findByName(ps.getNome());
+        //System.out.println(x.toString());
+
+        //var listinha = p.findAll();
+        //System.out.println(listinha.toString());
+
+        //var achandoPeloCPF = p.findByCPF("00000000000");
+        //System.out.println(achandoPeloCPF.toString());
+        //achandoPeloCPF.setNome("Anani Lemes Barbosa");
+
+        //var y = p.delete(achandoPeloCPF);
+        //System.out.println(p.findAll().toString());
+
+        //var x = p.update(achandoPeloCPF);
     }
 }

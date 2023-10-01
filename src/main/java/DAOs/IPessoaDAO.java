@@ -5,11 +5,12 @@ import Modules.Pessoa;
 import java.util.List;
 
 public interface IPessoaDAO {
-    Pessoa findById(int id);
+    List<Integer> findByName(String Nome);
+    Pessoa findByCPF(String CPF);
     List<Pessoa> findAll();
 
     boolean insert(Pessoa p);
     boolean update(Pessoa p);
-    boolean delete(int id);
+    boolean delete(Pessoa p);
 }
 
