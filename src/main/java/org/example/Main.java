@@ -6,7 +6,7 @@ import Modules.Pessoa;
 
 public class Main {
     public static void main(String[] args) {
-        Pessoa ps = new Pessoa("Anani", "65996451154", "58141286153");
+        Pessoa ps = new Pessoa("Anani", "65996451154", "0000000000");
 
         IPessoaDAO p = new PessoaDAO();
 
